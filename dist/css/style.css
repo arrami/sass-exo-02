@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  color: #333333;
+  min-height: 100vh;
+  font-size: 1.125em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: Verdana, Arial, sans-serif;
+}
+
+a {
+  color: navy;
+}
+a:hover {
+  color: mediumblue;
+}
+
+header {
+  height: 20vh;
+  background-color: salmon;
+}
+@media screen and (min-width: 320px) {
+  header {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+header nav a {
+  color: white;
+}
+
+main {
+  width: 80%;
+}
+@media screen and (min-width: 320px) {
+  main {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+main #content {
+  border-radius: 5px;
+  border: 2px solid red;
+  box-shadow: 3px 0px 4px #333, 1px 2px 0px pink;
+}
+footer {
+  height: 20vh;
+}
+@media screen and (min-width: 320px) {
+  footer {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

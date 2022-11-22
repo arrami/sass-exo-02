@@ -1,0 +1,95 @@
+@use "partials/variables" as *;
+@use "mixins/box" as *;
+@use "mixins/shadows" as *;
+@use "mixins/mediaqueries" as *;
+@use "mixins/center" as *;
+
+@use "functions/em" as *;
+
+body {
+  font-family: sans-serif;
+  color: $text-color;
+  min-height: $body-height;
+  //background-color: complement(#7fffd4);
+  font-size: em(18px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-font;
+}
+
+p {
+  color: $text-font;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: lighten($link-color, 15%);
+  }
+}
+
+header {
+  height: $header-height;
+  background-color: $theme-color;
+
+  @include sm {
+    @include center();
+  }
+
+  @include md {
+  }
+
+  @include lg {
+  }
+
+  nav {
+    a {
+      color: $menu-item-color;
+    }
+  }
+}
+
+main {
+
+
+  @include sm {
+    @include center();
+  }
+
+  @include md {
+  }
+
+  @include lg {
+  }
+
+
+  width: $content-width;
+  #content {
+    @include box($radius: 5px, $border: 2px solid red);
+    @include box-shadow(3px 0px 4px #333, 1px 2px 0px $ternary-color);
+  }
+  #aside {
+  }
+}
+
+footer {
+
+  @include sm {
+    @include center();
+  }
+
+  @include md {
+  }
+
+  @include lg {
+  }
+
+
+  height: $footer-height;
+}
